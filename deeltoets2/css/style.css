@@ -1,0 +1,133 @@
+/* CSS document */
+
+/*Algemen CSS opmaak*/
+body {
+	background: rgb(000, 000, 000);
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 100%;
+	color: #fff;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*CSS voor de ARTIKEL pagina*/
+	/*Door een > tussen SECTION en H1 te zetten spreek in een child selector aan. Dit is een direct child van de SECTION*/
+section > h1 { 
+	font-size: 40px;
+	color: #FFF;
+	text-shadow: 1px 1px .3em purple;
+}
+
+	/*Voor ieder ARTICLE wat */
+article {
+	border-top-right-radius:1em;
+	-moz-border-radius-topright:1em;
+	-webkit-border-top-right-radius:1em;
+
+	border-top-left-radius:1em;
+	-moz-border-radius-topleft:1em;
+	-webkit-border-top-left-radius:1em;
+	display:block;
+	background-color: #FFF;
+	box-shadow: 10px 10px 5px #333, -2px -2px 7px #888;
+	padding: 1em;
+}
+
+	/*Voor ieder ARTICLE na een ARTICLE*/
+article + article {
+	margin: 2em 0 0;
+}
+legend{
+	font-size: 1em;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 5px #FF0000;
+}
+
+article:nth-child(1n) {
+	color: #FFF;
+	background-color: #CCC;
+}
+
+article:last-child {
+	color:rgb(255, 40, 180);
+}
+
+/*CSS voor de FORMULIER pagina*/
+	/*FORM opmaak*/
+form {
+	background-color: #1a1a1a;
+	font: 100%/1.5 georgia;
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+	/*Om de bullet points weg te halen bij de ONGEORDENDE LIJSTJES.*/
+ul {
+	list-style: none;
+}
+
+	/*3D effect op de titels alleen op de FORMULIER pagina door het toevoegen van FIELDSET*/
+fieldset h1 {
+	color:black;
+	font-size: 25px;
+	text-shadow:1px 1px #bbb, 2px 2px #aaa, 3px 3px #999, 4px 4px #888, 5px 5px #777, 6px 6px #666, 6px 6px 6px black;
+}
+
+	/*Voor iedere FIELDSET*/
+fieldset {
+
+
+	border-top-right-radius:1em;
+	-moz-border-radius-topright:1em;
+	-webkit-border-top-right-radius:1em;
+
+	border-top-left-radius:1em;
+	-moz-border-radius-topleft:1em;
+	-webkit-border-top-left-radius:1em;
+
+	box-shadow: 0 0 1em currentColor;
+	padding: 1em;
+}
+
+	/*Voor iedere FIELDSET onder een andere FIELDSET, zo komt er wat ruimte tussen.*/
+fieldset + fieldset {
+	margin: 2em 0 0;
+}
+
+label[for="naam"]:after {
+	content: " *";
+	color: green;
+}
+
+input {
+	display: block;
+	width: 100%;
+	font-size: 20px;
+	border-radius: .3em;
+	box-shadow: inset .1em .1em .2em rgba(0,0,0,.2), .1em .1em .2em rgba(0,0,0,.5);
+	border: none;
+	transition: .5s;
+	-webkit-transition: .5s;
+	padding: .2em;
+}
+
+input:hover {
+	padding: .4em .2em;
+	-webkit-transform: translate(0,10%) rotate(5deg);
+	-moz-transform: translate(0,10%) rotate(5deg);
+	-o-transform: translate(0,10%) rotate(5deg);
+	-ms-transform: translate(0,10%) rotate(5deg);
+	transform: translate(0,10%) rotate(5deg) ;
+}
+
+input:focus {
+	background-color:yellow;
+	transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+}
+video{
+	width:100%;
+	margin-top:3%;
+	margin-bottom:3%;
+}
