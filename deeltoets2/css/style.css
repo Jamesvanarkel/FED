@@ -5,7 +5,7 @@ body {
 	background: rgb(000, 000, 000);
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 100%;
-	color: #fff;
+	color: #49fb35;
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
@@ -45,12 +45,12 @@ legend{
 }
 
 article:nth-child(1n) {
-	color: #FFF;
+	color: CornflowerBlue;
 	background-color: #CCC;
 }
 
 article:last-child {
-	color:rgb(255, 40, 180);
+	color:darkgreen;
 }
 
 /*CSS voor de FORMULIER pagina*/
