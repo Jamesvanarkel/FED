@@ -1,0 +1,7 @@
+html.no-boxshadow article {
+	border:1px solid #000;
+}
+html.textshadow article {
+	color:#fff;
+	text-shadow:0 0 5px #ccc;
+}

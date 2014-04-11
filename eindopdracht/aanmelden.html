@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- META -->
+        <meta name="description" content="content">
+        <meta name="keywords" content="content">
+        <meta name="author" content="James van Arkel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- IMPORT STYLESHEET-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="img/favicon.png" rel="icon" type="image/png" />
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.93623.js"></script>
+            <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <style type="text/css"></style>
+        <title>Aanmelden</title>
+    </head>
+    <body>
+        <header>
+            <a href="#">
+                <img src="img/logo.png" alt="Communication and Multimedia Design Amsterdam logo">
+            </a>
+            <label for="toggle-menu">Navigation </label>
+            <input id="toggle-menu" type="checkbox" > 
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="opleiding.html">Opleiding</a>
+                        <ul>
+                            <li><a href="#">Visie &amp; Beleid</a></li>
+                            <li><a href="#">Opbouw Studieprogramma</a></li>
+                            <li><a href="#">Competenties</a></li>
+                            <li><a href="#">Diploma</a></li>
+                            <li><a href="#">Beroepen</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Onderwijsprogramma</a></li>
+                    <li><a href="#">Organisatie</a></li>
+                    <li><a href="#">Stages en Projecten</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1> Aanmelden</h1>
+            <p>
+                Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+                Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.
+            </p>
+            <em>
+                CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.
+            </em>
+            <p>
+                Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u contact [link: contact] met ons op.
+            </p>
+        </section>
+        <form>
+            <fieldset>
+                <legend>Contactgegevens</legend>
+                <label for="name" >Naam:</label>
+                <input type="text" id="name" placeholder="James van Arkel"> 
+                <label for="company">Bedrijf:</label>
+                <input type="text" id="company"> 
+                <label for="adress">Adres:</label>
+                <input type="text" id="adress"> 
+                <label for="number">nummer:</label>
+                <input type="number" id="number" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" > 
+                <label for="postalcode">Postcode:</label>
+                <input type="text" id="postalcode"> 
+                <label for="place">Plaats:</label>
+                <input type="text" id="place"> 
+                <label for="telephonenumber">Telefoonnummer:</label>
+                <input type="tel" id="telephonenumber">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>Ik wil mij aanmelden voor:</legend>
+               <select id="aanmelden">
+                    <option value="none" selected="selected">Maak een keuze</option>
+                    <option value="project" id="projectkeuze">Project</option>
+                    <option value="stage" id="stagekeuze">Stage</option>
+                </select>
+            </fieldset>
+            <fieldset id="project">
+                <legend>Project gegevens</legend>
+                <label for="title">Titel:</label>
+                <input type="text" id="title"> 
+                <label for="assignment">Opdracht omschrijving:</label>
+                <textarea id="assignment"></textarea>
+                <label for="targetgroup">Doelgroep omschrijving:</label>
+                <textarea id="targetgroup"></textarea>
+                <label for="scope">Doelstelling/intentie van het project:</label>
+                <input type="text" id="scope"> 
+                <label for="runtime">Looptijd:</label>
+                <input type="date" id="runtime"> 
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline"> 
+                <h3>Geschikt voor:</h3>
+                <select>
+                    <option>Selecteer een jaar</option>
+                    <option>Eerstejaars studenten</option>
+                    <option>Tweedejaars studenten</option>
+                    <option>Derdejaars studenten</option>
+                    <option>Afstudeer studenten</option>
+                    <option>Onbekend</option>
+                </select>
+            </fieldset>
+            <fieldset id="stage">
+                <legend>Stage gegevens</legend>
+                <h3>Geschikt voor:</h3>
+                <select>
+                    <option>Selecteer</option>
+                    <option>Eerstejaars studenten</option>
+                    <option>Tweedejaars studenten</option>
+                    <option>Onbekend</option>
+                </select>
+                <h3>Hoe lang is de stage?</h3>
+                <select>
+                    <option>Selecteer het aantal weken</option>
+                    <option>10 weken</option>
+                    <option>20 weken</option>
+                </select>
+                <h3>Wanneer begint de stage?</h3>
+                <label for="start">Begin datum:</label>
+                <input type="date" id="start"> 
+                <label for="typeofwork">Beschrijving stagebedrijf</label>
+                <textarea id="typeofwork"></textarea>
+                <label for="companyname">Bedrijfsnaam:</label>
+                <input type="text" id="companyname"> 
+                <label for="adress2">Adres:</label>
+                <input type="text" id="adress2"> 
+                <label for="nummer2">nummer:</label>
+                <input type="number" id="nummer2"> 
+                <label for="postalcode2">Postcode:</label>
+                <input type="text" id="postalcode2">
+                <label for="place2">Plaats:</label>
+                <input type="text" id="place2"> 
+                <label for="section">Sector:</label>
+                <input type="text" id="section"> 
+                <label for="corebusiness">Core business:</label>
+                <input type="text" id="corebusiness"> 
+                <label for="comments">Opmerking:</label>
+                <textarea id="comments" ></textarea>
+                <input type="submit" value="Verzoek versturen" onClick="alert('Gegevens verzonden, er is alleen volgens mij niets ingevuld....')" >
+            </fieldset>
+
+        </form>
+        <footer>
+            <article>
+                <h1>Sitemap</h1>
+
+                    <ul>
+                        <li><a href="#">Opleiding</a>
+                            <ul>
+                                <li><a href="#">Visie & Beleid</a></li>
+                                <li><a href="#">Opbouw Studieprogramma</a></li>
+                                <li><a href="#">Competenties</a></li>
+                                <li><a href="#">Diploma</a></li>
+                                <li><a href="#">Beroepen</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Onderwijsprogramma</a>
+                            <ul>
+                                <li><a href="#">Mededelingen</a></li>
+                                <li><a href="#">Uitagenda</a></li>
+                                <li><a href="#">Propedeuse</a></li>
+                                <li><a href="#">Verdieping 1</a></li>
+                                <li><a href="#">Verdieping 2</a></li>
+                                <li><a href="#">Afstuderen</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Organisatie</a>
+                            <ul>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Docenten</a></li>
+                                <li><a href="#">Onderwijsbureau</a></li>
+                                <li><a href="#">Stagebureau</a></li>
+                                <li><a href="#">Buitenlandbureau</a></li>
+                                <li><a href="#">Examencommissie</a></li>
+                                <li><a href="#">Decaan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Stages en Projecten</a>
+                            <ul>
+                                <li><a href="#">Stages</a></li>
+                                <li><a href="#">Projecten</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h1>Contact</h1>
+                    <p>CMD Amsterdam
+                        Bezoekadres: Gebouw Theo Thijssenhuis (TTH), Wibautstraat 2-4, 1091 GM Amsterdam
+                        Postadres: Postbus 1025, 1000 BA Amsterdam
+                        Telefoon: 020 595 1855
+                        Email: <a href="mailto:info@cmd.hva.nl">info@cmd.hva.nl</a>
+                        RSS: <a href="#">Feed intranet</a></p>
+                </article>
+                <article>
+                    <h1>Zoeken</h1>
+                    <form>
+                        <input placeholder="Zoeken..." type="text">
+                        <input type="submit" value="OK">
+                    </form>
+                </article>
+                <article>
+                    <h1>About</h1>
+                    <p>CMD Amsterdam is een ontwerp opleiding voor Interactieve Media.
+                    Op de opleiding Communication & Multimedia Design (CMD) Amsterdam leer je alles over het ontwerpen van online interactieve media. Dit betekent begrijpen, bedenken en maken van interactieve mediatoepassingen zoals websites, mobiele applicaties en interactieve televisie.</p>
+                </article>
+                <article>
+                    <h1>Credits</h1>
+                    <p>© 2007 Hogeschool van Amsterdam - DMCI - CMD Amsterdam
+                    <a href="#">Geef ons feedback</a></p>
+                </article>
+        </footer>
+        <!--[if lte IE 8]>
+            <p>Download een normale browser</p>
+            <a href="#"> CHROME </a>
+        <![endif]-->
+            <script>
+        $(function() {
+            $("#aanmelden").change(function() {
+                if ($("#stagekeuze").is(":selected")) {
+                    $("#stage").show();
+                    $("#project").hide();
+                } else if ($("#projectkeuze").is(":selected")) {
+                    $("#stage").hide();
+                    $("#project").show();
+                } else {
+                    $("#stage").show();
+                    $("#project").show();
+                }
+            }).trigger('change');
+        });
+    </script>
+    </body>
+</html>
